@@ -13,7 +13,22 @@ It is an example of a ROS publisher and listener. Here the publisher reads a vid
 Since this is primarily an example of a publisher and listener interacting, the detector section is very basic. The detection can be improved by applying erosion and dilution. The color calbration is also presently done for the lighting conditions in the video. The ball detector code was tested with a USB camera as well but expectedly is very sensitive to conditions different from that in the video.
 
 **Screenshot from Test with Video** <br>
-![ROS for Beginners: Basics, Motion, and OpenCV](https://www.udemy.com/ros-essentials/learn/v4/overview)
+![Test with Video](ros_service_assignment/scripts/Tennis_ball_listener.png)
 
 **Screenshot from Test with USB Cam** <br>
-![ROS for Beginners: Basics, Motion, and OpenCV](https://www.udemy.com/ros-essentials/learn/v4/overview)
+![Test with USB Cam](ros_service_assignment/scripts/usb_cam_tracker.png)
+
+### How to Run
+```
+cd <path>/<ros_workspace>
+# eg. cd ~/catkin_ws
+cd src
+git clone https://github.com/tridivb/Tennis_Ball_Detector_using_ROS_and_OpenCV.git
+cd ..
+catkin_make
+## The following two commands need to be run in two different terminal sequentially
+# 1
+rosrun ros_service_assignment tennis_ball_publisher.py
+# 2
+rosrun ros_service_assignment tennis_ball_publisher.py
+```
