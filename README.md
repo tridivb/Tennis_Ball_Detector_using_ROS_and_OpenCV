@@ -20,11 +20,10 @@ Since this is primarily an example of a publisher and listener interacting, the 
 
 ### How to Run
 ```
+git clone https://github.com/tridivb/Tennis_Ball_Detector_using_ROS_and_OpenCV.git
+cp -R Tennis_Ball_Detector_using_ROS_and_OpenCV/ros_service_assignment <path>/<ros_workspace>
 cd <path>/<ros_workspace>
 # eg. cd ~/catkin_ws
-cd src
-git clone https://github.com/tridivb/Tennis_Ball_Detector_using_ROS_and_OpenCV.git
-cd ..
 catkin_make
 ## The following two commands need to be run in two different terminal sequentially
 # 1
